@@ -14,6 +14,9 @@ gsap.fromTo(
 gsap.fromTo(
     "#product-section", { y: "-100", opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: "power1.in" }
 );
+gsap.fromTo(
+    "#background-text", { y: 0, opacity: 0 }, { y: 0, opacity: 1, width: "300px", duration: 1, ease: "power1.in" }
+);
 const button = document.querySelector('.cookie');
 const body = document.querySelector('body');
 if (button != null) {
@@ -329,46 +332,48 @@ tl2 = new TimelineMax({ repeat: -1 });
 tl2.set("#c2", { autoAlpha: .7 })
     .to("#c2", .5, { scale: .2, x: "-=5", transformOrigin: "50% 50%" })
     .to("#c2", .5, { scale: 1, x: "+=5", transformOrigin: "50% 50%" })
-
-const cart_1 = document.querySelector(".svg_cart_1");
-const clicked_1 = cart_1.querySelector(".cart-image");
-cart_1.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_1, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
-const cart_2 = document.querySelector(".svg_cart_2");
-const clicked_2 = cart_2.querySelector(".cart-image");
-cart_2.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_2, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
-const cart_3 = document.querySelector(".svg_cart_3");
-const clicked_3 = cart_3.querySelector(".cart-image");
-cart_3.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_3, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
-const cart_4 = document.querySelector(".svg_cart_4");
-const clicked_4 = cart_4.querySelector(".cart-image");
-cart_4.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_4, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
-const cart_5 = document.querySelector(".svg_cart_5");
-const clicked_5 = cart_5.querySelector(".cart-image");
-cart_5.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_5, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
-const cart_6 = document.querySelector(".svg_cart_6");
-const clicked_6 = cart_6.querySelector(".cart-image");
-cart_6.addEventListener("click", (e) => {
-    gsap.fromTo(
-        clicked_6, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
-    );
-});
+const pageProduct = document.querySelector(".product-page");
+if (pageProduct != null) {
+    const cart_1 = document.querySelector(".svg_cart_1");
+    const clicked_1 = cart_1.querySelector(".cart-image");
+    cart_1.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_1, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+    const cart_2 = document.querySelector(".svg_cart_2");
+    const clicked_2 = cart_2.querySelector(".cart-image");
+    cart_2.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_2, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+    const cart_3 = document.querySelector(".svg_cart_3");
+    const clicked_3 = cart_3.querySelector(".cart-image");
+    cart_3.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_3, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+    const cart_4 = document.querySelector(".svg_cart_4");
+    const clicked_4 = cart_4.querySelector(".cart-image");
+    cart_4.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_4, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+    const cart_5 = document.querySelector(".svg_cart_5");
+    const clicked_5 = cart_5.querySelector(".cart-image");
+    cart_5.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_5, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+    const cart_6 = document.querySelector(".svg_cart_6");
+    const clicked_6 = cart_6.querySelector(".cart-image");
+    cart_6.addEventListener("click", (e) => {
+        gsap.fromTo(
+            clicked_6, { rotation: -5 }, { rotation: 0, fill: "#42B549", duration: 2, ease: "elastic.out(5, 0.2)" }
+        );
+    });
+}
